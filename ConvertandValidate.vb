@@ -12,17 +12,11 @@ Module ConvertandValidate
 
     Sub Main()
         Dim userinput As String
-        Dim validate As String
         Dim converted As Integer
 
         userinput = Console.ReadLine()
-        validate = ValidateAndConvert(userinput, converted)
+        Console.WriteLine(ValidateAndConvert(userinput, converted))
 
-        If validate = "" Then
-            Console.WriteLine(converted)
-        Else
-            Console.WriteLine(validate)
-        End If
         Console.ReadLine()
     End Sub
 
