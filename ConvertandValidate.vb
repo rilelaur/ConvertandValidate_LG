@@ -21,10 +21,7 @@ Module ConvertandValidate
     End Sub
 
     Private Function ValidateAndConvert(convertThisString As String, toThisInteger As Integer) As String
-        'Converts the string to an integer
-        'If it converts it will return a blank
-        'If it fails to convert it will check if it is empty
-        'or if it is simply unable to convert and return the message acccordingly
+        'Converts the string to an integer. If it converts, it will return a blank. If it fails to convert it will check if it is empty or if it is simply unable to convert and then return the message acccordingly
         Try
             toThisInteger = CInt(convertThisString)
             Return " "
